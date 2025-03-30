@@ -16,6 +16,7 @@
 ❌CS294-3-Autogen
 ✅Class-Inheritance
 ✅Code-Reuse-in-OOP
+❌DataStructure-Fenwick-Tree-Sparse-Table
 ✅DataStructure-LinearList
 ✅DataStructure-Queue
 ✅DataStructure-Set
