@@ -8,7 +8,7 @@ DIR="/mnt/d/Blog/source/_posts"
 
 echo "Getting updated."
 
-ls $DIR | grep -v ".*\.md" | grep -v ".*\.sh" > ans.txt
+ls $DIR | grep ".*\.md" | sed 's/\.md$//' > ans.txt
 
 # define directory
 PREV_FILE="prev.txt"
