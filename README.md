@@ -2,7 +2,7 @@
  * @Author: Xiyuan Yang   xiyuan_yang@outlook.com
  * @Date: 2025-03-30 19:42:38
  * @LastEditors: Xiyuan Yang   xiyuan_yang@outlook.com
- * @LastEditTime: 2025-04-28 16:52:08
+ * @LastEditTime: 2025-04-28 16:58:49
  * @FilePath: /Blog_posts_get/README.md
  * @Description: 
  * Do you code and make progress today?
@@ -136,10 +136,14 @@ Finally, the scripts will update `prev.txt` and generate a new blog status named
 
 ## Demo
 
+![Demo 1](./img/demo1.png)
 
+![Demo 2](./img/demo2.png)
 
 **Enjoy Coding**
 
 ## Discussion
 
 Just for fun, and just for `hexo` users.
+
+Welcome PRs.
