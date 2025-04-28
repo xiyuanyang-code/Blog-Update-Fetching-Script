@@ -13,8 +13,16 @@ def get_blog_posts():
     """Get all markdown files in the blog directory and save their names (without extension) to ans.txt"""
     try:
         posts = [f[:-3] for f in os.listdir(BLOG_DIR) if f.endswith('.md')]
+
+        # create PREV_FILE
+        if not os.path.exists(PREV_FILE):
+            with open(PREV_FILE, 'w') as file:
+                pass  
+
+        # creat ANS_FILE
         with open(ANS_FILE, 'w') as f:
             f.write('\n'.join(posts))
+
         return True
     except Exception as e:
         print(f"Error getting blog posts: {e}")
@@ -30,6 +38,7 @@ def load_previous_status():
                     line = line.strip()
                     if line:
                         prefix = line[0]
+                        # three emojis: ❌✅⏸️
                         title = line[1:]
                         status[title] = prefix
         except Exception as e:
@@ -46,10 +55,10 @@ def create_log_dir():
             print(f"Error creating {LOG_DIR}: {e}")
             sys.exit(1)
 
-def get_user_input(title, is_new=False):
+def get_user_input(title, is_new = False):
     """Get user input for a blog post"""
     while True:
-        prompt = f"New Blog '{title}' finished? (y/n): " if is_new else f"Blog '{title}' finished? (y/n): "
+        prompt = f"New Blog '{title}' finished? (y/c/n): " if is_new else f"Blog '{title}' finished? (y/c/n): "
         user_input = input(prompt).strip().lower()
         
         if not user_input:
@@ -60,6 +69,8 @@ def get_user_input(title, is_new=False):
             return f"✅{title}"
         elif user_input == 'n':
             return f"❌{title}"
+        elif user_input == 'c':
+            return f"⏸️{title}"
         else:
             print("Invalid Input!")
 
@@ -83,7 +94,7 @@ def main():
     print("File Exists")
     
     # Get timestamp for new status file
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     new_status_file = os.path.join(LOG_DIR, f"{timestamp}.txt")
     
     print("Getting ready for updated.")
@@ -107,6 +118,8 @@ def main():
                     else:
                         result = get_user_input(title)
                         new_status.append(result)
+
+                # if title is not in the prev status, meaning that this is a new Blog!
                 else:
                     result = get_user_input(title, is_new=True)
                     new_status.append(result)
