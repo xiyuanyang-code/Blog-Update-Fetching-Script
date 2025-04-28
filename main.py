@@ -1,9 +1,11 @@
-#!/usr/bin/env python3
+#!/home/xiyuanyang/anaconda3/bin/python
+# ! ATTENTION: change it to your own python interpreter.
 import os
 import sys
 from datetime import datetime
 
 # Configuration
+# ! ATTENTION: replace the BLOG_DIR with your own.
 BLOG_DIR = "/mnt/d/Blog/source/_posts"
 PREV_FILE = "prev.txt"
 ANS_FILE = "ans.txt"
