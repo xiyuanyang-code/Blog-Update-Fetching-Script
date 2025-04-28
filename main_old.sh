@@ -1,4 +1,5 @@
 #!/bin/bash
+# ! WARNING: This script is out-of-date, which will no longer be maintained.
 
 # Auto scripts for getting Blog posts
 
