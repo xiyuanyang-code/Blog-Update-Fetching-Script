@@ -1,14 +1,123 @@
-<!--
- * @Author: Xiyuan Yang   xiyuan_yang@outlook.com
- * @Date: 2025-03-30 19:42:38
- * @LastEditors: Xiyuan Yang   xiyuan_yang@outlook.com
- * @LastEditTime: 2025-04-28 16:58:49
- * @FilePath: /Blog_posts_get/README.md
- * @Description: 
- * Do you code and make progress today?
- * Copyright (c) 2025 by Xiyuan Yang, All Rights Reserved. 
--->
 # Blog Update Fetching Script
+
+## My Blog Updating Status
+
+<!-- BEGIN -->
+```text
+✅Above-All-en
+✅Above-All-ZH
+✅Agents-in-Coding-A-survey
+⏸️AI-Paper-2024
+✅AIBasis-Neural-Networks
+✅AINN-Attention
+⏸️AINN-Transformer
+✅Algorithm-BFS-DFS
+✅Algorithm-BinaryTree
+✅Algorithm-Chunking
+✅Algorithm-Introduction
+✅Algorithm-MCTS
+✅Algorithm-Memo
+✅Algorithm-Sorting
+✅Announcement
+✅Automaton-NFA
+✅Bash-commands
+✅Bash-exercises
+✅Blog-Update-Fetching-Script
+✅Blog-Word-Counter
+✅C-plus-plus-Primer-Plus-tutorial
+✅CamelAI-automatic-essay-modification
+✅Class-Inheritance
+✅CMake-tutorial-episode2
+✅CMake-tutorial1
+✅Code-Line-Counter
+✅Code-Reuse-in-OOP
+✅CS294-1-LLM-Reasoning
+✅CS294-3-Autogen
+✅DataStructure-AVL-Tree
+✅DataStructure-Awesome
+✅DataStructure-B-and-B-plus-Tree
+✅DataStructure-Disjoint-Set
+✅DataStructure-Fenwick-Tree
+✅DataStructure-Graph-AOE-and-AOV-Network
+✅DataStructure-Graph-Introduction
+✅DataStructure-Graph-Mathematical-Basis
+✅DataStructure-Graph-MST-problem
+❌DataStructure-Graph-Network-Flow-problem
+✅DataStructure-Graph-SCC
+✅DataStructure-Graph-SSSP-problem
+✅DataStructure-Hash-Table
+✅DataStructure-LCA
+✅DataStructure-LinearList
+✅DataStructure-Queue
+✅DataStructure-RBT-Tree
+✅DataStructure-Segment-Tree
+✅DataStructure-Set
+✅DataStructure-Sparse-Table
+✅DataStructure-Splay-Tree
+✅DataStructure-Stack-Queue-Advanced
+✅DataStructure-Stack
+✅DataStructure-String
+✅DataStructure-Tree-Binary-Heap
+✅DataStructure-Tree-Binary-Search-Tree
+✅DataStructure-Tree-Binary-Tree
+✅DataStructure-Tree
+✅DataStructure-Tutorial
+✅Deep-Learning-Memo
+✅Docker-Tutorial
+✅Dynamic-Memory-and-Classes
+✅Exception-Handling-in-C-plus-plus
+✅Factor-Mining-in-Quantitative-Investing-A-Survey
+✅hello-world
+✅Imagenet
+✅Input-and-Output-in-C-plus-plus
+✅Introduction-to-OOP
+✅Javascripts-Advanced
+✅Javascripts-Memo
+✅Jotting-References-and-Encapsulation-in-OOP
+✅LaTeX-tutorial
+✅Leetcode-Mistake-collection-1-10
+✅Leetcode-Mistake-collection-11-20
+✅Leetcode-Mistake-collection-21-30
+✅Leetcode-Mistake-collection-31-40
+✅Leetcode-Mistake-collection
+✅Life-musings
+✅Lightweight-speech-recognition-conversion-model
+✅Linked-List-Implementation-Based-on-Structs
+✅Linux-Bash-Introduction
+✅LLM-Evaluating
+✅Math-Integral-Cheatsheet
+✅Missing-Semester-Notes
+✅Modern-C
+✅My-Memo
+✅My-Multi-Agents
+✅My-Posts
+✅My-WorkFlow
+✅Pointers-Arrays-and-Functions
+✅Pre-training-Is-Dead
+✅Profiling-and-Debugging
+✅Python-Advanced-Programming
+✅Python-cheatsheet
+⏸️Python-Environment-Modules-Tutorial
+✅Python-File-Management
+✅Python-numpy-cheatsheet
+✅Python-Pipe
+✅Python-Threadings
+✅Python-visualization
+✅RAG-Blog-Content-Retrieval
+✅RAG-tutorial
+✅Regular-Expression
+⏸️RL-speeches
+✅Rust-OwnerShip
+✅Secure-Shell-and-Encryption
+⏸️Taking-Notes
+✅Tools-Tutorial
+✅Torch-Memo-Tensor-Operations
+✅Torch-Memo-TensorBoard
+✅Torch-memo
+✅Vim-tutorial
+✅WSL-Proxy
+```
+<!-- END -->
 
 ## Introduction
 

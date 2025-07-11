@@ -9,11 +9,14 @@ trap handle_interrupt SIGINT
 
 echo "Current time: $(date)"
 
-if python main.py; then
+if python src/main.py; then
     cat prev.txt
 else
     echo "Error: Python program failed to execute."
     exit 1
 fi
+
+# run update_readme.py
+python src/update_readme.py
 
 echo "Finished."
