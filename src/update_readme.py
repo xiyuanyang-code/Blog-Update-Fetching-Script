@@ -11,7 +11,7 @@ def replace_section(readme_path, prev_path):
     with open(prev_path, "r", encoding="utf-8") as f:
         prev_content = f.read().rstrip("\n")
 
-    # contruct new content
+    # construct new content
     new_lines = (
         lines[: begin_idx + 1]
         + ["```text\n"]
@@ -27,3 +27,5 @@ def replace_section(readme_path, prev_path):
 
 if __name__ == "__main__":
     replace_section("README.md", "prev.txt")
+    file_path = "/home/xiyuanyang/Blog/Blog_Main/source/_posts/My-Posts.md"
+    replace_section(file_path, "prev.txt")
