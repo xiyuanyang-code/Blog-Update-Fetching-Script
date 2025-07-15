@@ -97,7 +97,7 @@
 ✅Profiling-and-Debugging
 ✅Python-Advanced-Programming
 ✅Python-cheatsheet
-⏸️Python-Environment-Modules-Tutorial
+✅Python-Environment-Modules-Tutorial
 ✅Python-File-Management
 ✅Python-numpy-cheatsheet
 ✅Python-Pipe
