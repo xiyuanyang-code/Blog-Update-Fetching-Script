@@ -10,7 +10,7 @@
 ⏸️AI-Paper-2024
 ✅AIBasis-Neural-Networks
 ✅AINN-Attention
-⏸️AINN-Transformer
+✅AINN-Transformer
 ✅Algorithm-BFS-DFS
 ✅Algorithm-BinaryTree
 ✅Algorithm-Chunking
@@ -109,7 +109,7 @@
 ⏸️RL-speeches
 ✅Rust-OwnerShip
 ✅Secure-Shell-and-Encryption
-⏸️Taking-Notes
+✅Taking-Notes
 ✅Tools-Tutorial
 ✅Torch-Memo-Tensor-Operations
 ✅Torch-Memo-TensorBoard
