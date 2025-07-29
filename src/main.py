@@ -6,7 +6,7 @@ from datetime import datetime
 
 # Configuration
 # ! ATTENTION: replace the BLOG_DIR with your own.
-BLOG_DIR = "/mnt/d/Blog/source/_posts"
+BLOG_DIR = "/home/xiyuanyang/Blog/Blog_Main/source/_posts/"
 PREV_FILE = "prev.txt"
 ANS_FILE = "ans.txt"
 LOG_DIR = "log"
@@ -16,12 +16,12 @@ def get_blog_posts():
     try:
         posts = [f[:-3] for f in os.listdir(BLOG_DIR) if f.endswith('.md')]
 
-        # create PREV_FILE
+        # create PREV_FILE if it doesn't exist
         if not os.path.exists(PREV_FILE):
             with open(PREV_FILE, 'w') as file:
                 pass  
 
-        # creat ANS_FILE
+        # create ANS_FILE
         with open(ANS_FILE, 'w') as f:
             f.write('\n'.join(posts))
 
@@ -104,30 +104,44 @@ def main():
     # Load previous status
     prev_status = load_previous_status()
     
-    # Process current blog posts
-    new_status = []
-    
+    # Read current blog posts from ANS_FILE
+    current_posts = set()
     try:
         with open(ANS_FILE, 'r') as f:
             for line in f:
                 title = line.strip()
-                if not title:
-                    continue
-                
-                if title in prev_status:
-                    if prev_status[title] == "✅":
-                        new_status.append(f"✅{title}")
-                    else:
-                        result = get_user_input(title)
-                        new_status.append(result)
-
-                # if title is not in the prev status, meaning that this is a new Blog!
-                else:
-                    result = get_user_input(title, is_new=True)
-                    new_status.append(result)
+                if title:
+                    current_posts.add(title)
     except Exception as e:
-        print(f"Error processing {ANS_FILE}: {e}")
+        print(f"Error reading {ANS_FILE}: {e}")
         sys.exit(1)
+
+    # Identify deleted posts
+    deleted_posts = []
+    for title in prev_status:
+        if title not in current_posts:
+            deleted_posts.append(title)
+    
+    if deleted_posts:
+        print("\n--- Detected Deleted Blog Posts ---")
+        for post in deleted_posts:
+            print(f"🗑️ Blog '{post}' has been deleted from your blog directory.")
+        print("-----------------------------------\n")
+
+    # Process current blog posts and build new_status
+    new_status = []
+    for title in current_posts:
+        if title in prev_status:
+            # Existing blog post
+            if prev_status[title] == "✅":
+                new_status.append(f"✅{title}")
+            else:
+                result = get_user_input(title)
+                new_status.append(result)
+        else:
+            # New blog post
+            result = get_user_input(title, is_new=True)
+            new_status.append(result)
     
     # Save new status
     try:
