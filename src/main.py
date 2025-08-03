@@ -1,4 +1,4 @@
-#!/home/xiyuanyang/anaconda3/bin/python
+#!/usr/bin/python
 # ! ATTENTION: change it to your own python interpreter.
 import os
 import sys
@@ -15,7 +15,8 @@ LOG_DIR = "log"
 def get_blog_posts():
     """Get all markdown files in the blog directory and save their names (without extension) to ans.txt"""
     try:
-        posts = [f[:-3] for f in os.listdir(BLOG_DIR) if f.endswith(".md")]
+        # Get all markdown files and sort them alphabetically
+        posts = sorted([f[:-3] for f in os.listdir(BLOG_DIR) if f.endswith(".md")])
 
         # create PREV_FILE if it doesn't exist
         if not os.path.exists(PREV_FILE):
@@ -97,12 +98,8 @@ def remove_invisible_chars_encode_decode(text: str):
 
 
 def main():
-    print("Getting updated.")
-
     if not get_blog_posts():
         sys.exit(1)
-
-    print("Checking the file exists")
 
     if not os.path.exists(PREV_FILE):
         print(f"Error: {PREV_FILE} doesn't exist!")
@@ -113,13 +110,10 @@ def main():
         sys.exit(1)
 
     create_log_dir()
-    print("File Exists")
 
     # Get timestamp for new status file
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     new_status_file = os.path.join(LOG_DIR, f"{timestamp}.txt")
-
-    print("Getting ready for updated.")
 
     # Load previous status
     prev_status = load_previous_status()
@@ -135,12 +129,14 @@ def main():
     except Exception as e:
         print(f"Error reading {ANS_FILE}: {e}")
         sys.exit(1)
+    
+    # Sort the current posts alphabetically before processing them
+    sorted_current_posts = sorted(list(current_posts))
 
     # Identify deleted posts
     deleted_posts = []
     for title in prev_status.keys():
         title = remove_invisible_chars_encode_decode(str(title).strip())
-        print(title)
         if title not in current_posts:
             deleted_posts.append(title)
 
@@ -152,7 +148,7 @@ def main():
 
     # Process current blog posts and build new_status
     new_status = []
-    for title in current_posts:
+    for title in sorted_current_posts:
         if title in prev_status:
             # Existing blog post
             if prev_status[title] == "✅":
@@ -178,12 +174,11 @@ def main():
     try:
         with open(PREV_FILE, "w") as f:
             f.write("\n".join(new_status))
-        print("Overwrite to prev.txt successfully, Done!")
     except Exception as e:
         print(f"Error updating {PREV_FILE}: {e}")
         sys.exit(1)
 
-    print("Be productive!")
+    print("\nUpdate complete. Be productive!")
 
 
 if __name__ == "__main__":
