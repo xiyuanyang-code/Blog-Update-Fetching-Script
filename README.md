@@ -16,7 +16,7 @@
 ✅Algorithm-MCTS
 ✅Algorithm-Memo
 ✅Algorithm-Sorting
-⏸️Andrew-Ng-Building-Faster-with-AI
+✅Andrew-Ng-Building-Faster-with-AI
 ✅Announcement
 ✅Automaton-NFA
 ✅Bash-commands
