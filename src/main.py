@@ -81,7 +81,7 @@ def get_user_input(title, is_new=False):
         elif user_input == "n":
             return f"❌{title}"
         elif user_input == "c":
-            return f"⏸️{title}"
+            return f"🫡{title}"
         else:
             print("Invalid Input!")
 
