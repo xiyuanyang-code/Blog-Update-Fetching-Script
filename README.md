@@ -4,7 +4,7 @@
 
 <!-- BEGIN -->
 ```text
-⏸️AI-Paper-2024
+🫡AI-Paper-2024
 ✅AIBasis-Neural-Networks
 ✅Above-All-ZH
 ✅Above-All-en
@@ -66,7 +66,7 @@
 ✅Exception-Handling-in-C-plus-plus
 ✅Factor-Mining-in-Quantitative-Investing-A-Survey
 ✅Feishu-GPU-Auto-Monitoring
-⏸️Git-Advanced-Memo
+🫡Git-Advanced-Memo
 ✅Imagenet
 ✅Input-and-Output-in-C-plus-plus
 ✅Introduction-to-OOP
@@ -77,7 +77,7 @@
 ✅LLM-Learning-Initial
 ✅LLML-Attention
 ✅LLML-CS336-Lecture-1-Overview-and-Tokenization
-⏸️LLML-CS336-Lecture-2-Pytorch-Resource-Accounting
+🫡LLML-CS336-Lecture-2-Pytorch-Resource-Accounting
 ✅LLML-Transformer
 ✅LaTeX-tutorial
 ✅Leetcode-Mistake-collection
@@ -116,7 +116,7 @@
 ✅Quick-GPT-A-fast-and-simple-CLI-LLM-calling-function
 ✅RAG-Blog-Content-Retrieval
 ✅RAG-tutorial
-⏸️RL-speeches
+🫡RL-speeches
 ✅Regular-Expression
 ✅Rust-OwnerShip
 ✅Secure-Shell-and-Encryption
