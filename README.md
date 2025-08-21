@@ -77,7 +77,9 @@
 ✅LLM-Learning-Initial
 ✅LLML-Attention
 ✅LLML-CS336-Lecture-1-Overview-and-Tokenization
-🫡LLML-CS336-Lecture-2-Pytorch-Resource-Accounting
+✅LLML-CS336-Lecture-2-Pytorch-Resource-Accounting
+✅LLML-CS336-Lecture-3-1-Architectures
+🫡LLML-CS336-Lecture-3-2-Hypeparameters
 ✅LLML-Transformer
 ✅LaTeX-tutorial
 ✅Leetcode-Mistake-collection
