@@ -4,7 +4,6 @@
 
 <!-- BEGIN -->
 ```text
-🫡AI-Paper-2024
 ✅AIBasis-Neural-Networks
 ✅Above-All-ZH
 ✅Above-All-en
@@ -68,6 +67,7 @@
 ✅Feishu-GPU-Auto-Monitoring
 ✅Git-Advanced-Memo
 ✅Imagenet
+🫡Information-Theory
 ✅Input-and-Output-in-C-plus-plus
 ✅Introduction-to-OOP
 ✅Javascripts-Advanced
@@ -76,10 +76,12 @@
 ✅LLM-Evaluating
 ✅LLM-Learning-Initial
 ✅LLML-Attention
+✅LLML-CS224n-Lecture-10-Post-Training
+✅LLML-CS224n-Lecture-9-Pre-Training
 ✅LLML-CS336-Lecture-1-Overview-and-Tokenization
 ✅LLML-CS336-Lecture-2-Pytorch-Resource-Accounting
 ✅LLML-CS336-Lecture-3-1-Architectures
-🫡LLML-CS336-Lecture-3-2-Hypeparameters
+✅LLML-CS336-Lecture-3-2-Hypeparameters
 ✅LLML-Transformer
 ✅LaTeX-tutorial
 ✅Leetcode-Mistake-collection
@@ -123,6 +125,15 @@
 🫡RL-speeches
 ✅Regular-Expression
 ✅Rust-OwnerShip
+✅Rust-Project-Minigrep
+✅Rust-Tutorial
+✅Rust-Tutorial-1-Basic-Concepts
+✅Rust-Tutorial-3-Struct-and-enums
+✅Rust-Tutorial-4-Packages-Crates-and-Modules
+✅Rust-Tutorial-5-Collections
+✅Rust-Tutorial-6-Exception-Handling
+✅Rust-Tutorial-7-Generic-Types-Traits-and-Lifetimes
+✅Rust-Tutorial-8-Functional-programming
 ✅Secure-Shell-and-Encryption
 ✅Taking-Notes
 ✅The-New-Code-Sean-Grove-OpenAI
@@ -130,6 +141,8 @@
 ✅Torch-Memo-Tensor-Operations
 ✅Torch-Memo-TensorBoard
 ✅Torch-memo
+❌Training-My-LLM-from-scratch
+❌Tutorial-of-Probability-Theory
 ✅Vim-tutorial
 ✅WSL-Proxy
 ✅hello-world
